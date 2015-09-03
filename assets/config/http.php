@@ -7,6 +7,17 @@ return array(
     'resolver' => array(
         'type' => 'group',
         'resolvers' => array(
+            'admin' => array(
+                'type'     => 'prefix',
+                'path'  => 'admin/',
+                'defaults' => array(
+                    'bundle' => 'admin'
+                ),
+                'resolver' => array(
+                    'type' => 'mount',
+                    'name' => 'admin'
+                )
+            ),
             'app' => array(
                 'type' => 'prefix',
                 'defaults' => array(

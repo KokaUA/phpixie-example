@@ -10,7 +10,9 @@
                 "tests/",
                 
                 "bundles/app/src/",
-                "bundles/app/tests/"
+                "bundles/app/tests/",
+                "bundles/admin/src/",
+                "bundles/admin/tests/"
             ]
         }
     },
