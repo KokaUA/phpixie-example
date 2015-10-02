@@ -16,6 +16,7 @@
             ]
         }
     },
+    "minimum-stability": "dev",
     "require": {
         "phpixie/default-bundle": "3.*@dev",
         "phpixie/bundle-framework": "3.*@dev",
@@ -32,7 +33,17 @@
         "phpixie/processors": "3.*@dev",
         "phpixie/http": "3.*@dev",
         "psr/http-message": "1.*@dev",
-        "phpixie/http-processors": "3.*@dev"
+        "phpixie/http-processors": "3.*@dev",
+        "phpixie/auth": "3.*@dev",
+        "phpixie/auth-orm": "3.*@dev",
+        "phpixie/auth-processors": "3.*@dev",
+        "phpixie/security": "3.*@dev",
+        "phpixie/auth-http": "3.*@dev",
+        "phpixie/auth-login": "3.*@dev",
+        "phpixie/paginate": "3.*@dev",
+        "phpixie/paginate-orm": "3.*@dev",
+		"koka/flash": "dev-master",
+		"koka/phpixie-bootstrap3-bundle": "dev-master"
     },
     "require-dev": {
         "phpixie/test": "3.*@dev"
