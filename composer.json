@@ -1,14 +1,23 @@
 {
-	"name": "phpixie/project",
-	"type": "project",
-	"description" : "PHPixie skeleton project",
-	"license" : "BSD",
+    "name": "koka/phpixie-project",
+    "type": "project",
+    "description": "PHPixie advanced skeleton project",
+    "license": "MIT",
+    "keywords": [
+        "phpixie",
+        "project"
+    ],
+    "authors": [
+        {
+            "name": "Kostya Nemchenko",
+            "email": "kostya.nemchenko@gmail.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "": [
                 "src/",
                 "tests/",
-                
                 "bundles/app/src/",
                 "bundles/app/tests/",
                 "bundles/admin/src/",
@@ -18,6 +27,7 @@
     },
     "minimum-stability": "dev",
     "require": {
+        "php": ">=5.4.0",
         "phpixie/default-bundle": "3.*@dev",
         "phpixie/bundle-framework": "3.*@dev",
         "phpixie/bundles": "3.*@dev",
@@ -42,15 +52,15 @@
         "phpixie/auth-login": "3.*@dev",
         "phpixie/paginate": "3.*@dev",
         "phpixie/paginate-orm": "3.*@dev",
-		"koka/flash": "dev-master",
-		"koka/phpixie-bootstrap3-bundle": "dev-master"
+        "koka/flash": "dev-master",
+        "koka/phpixie-bootstrap3-bundle": "dev-master"
     },
     "require-dev": {
         "phpixie/test": "3.*@dev"
     },
-	"extra": {
-		"branch-alias": {
-			"dev-master": "3.*-dev"
-		}
-	}
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.*-dev"
+        }
+    }
 }

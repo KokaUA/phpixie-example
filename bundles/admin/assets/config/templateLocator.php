@@ -1,5 +1,5 @@
 <?php
-return array(
+return [
     'type'      => 'directory',
     'directory' => 'templates'
-);
+];

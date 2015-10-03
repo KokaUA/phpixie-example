@@ -1,15 +1,15 @@
 <?php
-return array(
+return [
     'type'      => 'group',
-    'resolvers' => array(
+    'resolvers' => [
         
-        'default' => array(
+        'default' => [
             'type'     => 'pattern',
             'path'     => '(<processor>(/<action>))',
-            'defaults' => array(
+            'defaults' => [
                 'processor' => 'home',
                 'action'    => 'index'
-            )
-        )
-    )
-);
+            ]
+        ]
+    ]
+];
