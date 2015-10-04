@@ -1,2 +1,2 @@
 <?php $this->layout('admin:layout');?>
-<div>act1</div>
+<div class="col-md-12">Content</div>

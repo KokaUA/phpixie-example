@@ -1,39 +1,39 @@
 <?php
 
-return array(
-    'translator' => array(
+return [
+    'translator' => [
         'basePath' => '/'
-    ),
-    'resolver' => array(
+    ],
+    'resolver' => [
         'type' => 'group',
-        'resolvers' => array(
-            'admin' => array(
+        'resolvers' => [
+            'admin' => [
                 'type'     => 'prefix',
                 'path'  => 'admin/',
-                'defaults' => array(
+                'defaults' => [
                     'bundle' => 'admin'
-                ),
-                'resolver' => array(
+                ],
+                'resolver' => [
                     'type' => 'mount',
                     'name' => 'admin'
-                )
-            ),
-            'app' => array(
+                ]
+            ],
+            'app' => [
                 'type' => 'prefix',
-                'defaults' => array(
+                'defaults' => [
                     'bundle' => 'app'
-                ),
-                'resolver' => array(
+                ],
+                'resolver' => [
                     'type' => 'mount',
                     'name' => 'app'
-                )
-            )
-        )
-    ),
-    'exceptionResponse' => array(
+                ]
+            ]
+        ]
+    ],
+    'exceptionResponse' => [
         'template' => 'framework:http/exception'
-    ),
-    'notFoundResponse' => array(
+    ],
+    'notFoundResponse' => [
         'template' => 'framework:http/notFound'
-    )
-);
+    ]
+];

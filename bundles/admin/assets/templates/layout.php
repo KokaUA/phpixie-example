@@ -1,11 +1,21 @@
+<?php  include $this->resolve('bootstrap3Bundle:default');?>
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>PHPixie 3.0</title>
-	</head>
-	<body>
-        <h1>PHPixie 3.0</h1>
-		<div><a href="/">home</a></div>
+<head>
+	<title>Admin panel</title>
+	<?php $this->block('bootstrap-css');?>
+	<?php $this->block('jquery-js');?>
+</head>
+<body>
+<div class="container">
+	<div class="page-header">
+		<h1>Administration panel</h1>
+	</div>
+	<div class="row">
 		<?php $this->childContent();?>
-	</body>
+	</div>
+	<div class="row"><a href="/">Home</a></div>
+</div>
+<?php $this->block('bootstrap-js');?>
+</body>
 </html>

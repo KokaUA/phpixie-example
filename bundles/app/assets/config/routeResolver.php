@@ -3,13 +3,12 @@
 return [
     'type'      => 'group',
     'resolvers' => [
-        
         'default' => [
             'type'     => 'pattern',
             'path'     => '(<processor>(/<action>))',
             'defaults' => [
-                'processor' => 'greet',
-                'action'    => 'default'
+                'processor' => 'home',
+                'action'    => 'index'
             ]
         ]
         
