@@ -7,17 +7,6 @@ return [
     'resolver' => [
         'type' => 'group',
         'resolvers' => [
-            'admin' => [
-                'type'     => 'prefix',
-                'path'  => 'admin/',
-                'defaults' => [
-                    'bundle' => 'admin'
-                ],
-                'resolver' => [
-                    'type' => 'mount',
-                    'name' => 'admin'
-                ]
-            ],
             'app' => [
                 'type' => 'prefix',
                 'defaults' => [

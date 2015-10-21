@@ -11,10 +11,16 @@
 	<div class="page-header">
 		<h1>PHPixie project skeleton</h1>
 	</div>
+	<?php if (isset($flash) && $flash->has()) :?>
+		<div class="row">
+		<?php foreach ($flash as $msg) :?>
+			<div class="alert alert-<?= ($msg->getType() == 'error')?'danger':$msg->getType();?>" role='alert'><?=$_($msg)?></div>
+		<?php endforeach;?>
+		</div>
+	<?php endif;?>
 	<div class="row">
 		<?php $this->childContent();?>
 	</div>
-	<div class="row"><a href="/">Home</a></div>
 </div>
 <?php $this->block('bootstrap-js');?>
 </body>

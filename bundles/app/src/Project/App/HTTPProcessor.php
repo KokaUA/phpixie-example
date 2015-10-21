@@ -14,6 +14,6 @@ class HTTPProcessor extends \PHPixie\DefaultBundle\Processor\HTTP\Builder
 
     protected function buildHomeProcessor()
     {
-        return new HTTPProcessors\Home($this->builder->components());
+        return new HTTPProcessors\Home($this->builder);
     }
 }

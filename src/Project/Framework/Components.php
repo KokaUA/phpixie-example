@@ -11,6 +11,6 @@ class Components extends \PHPixie\BundleFramework\Components
 
     protected function buildFlash()
     {
-        return new \Koka\Flash\Messages($this->builder->context());
+        return new \Koka\Flash\Flash($this->builder->context());
     }
 }
